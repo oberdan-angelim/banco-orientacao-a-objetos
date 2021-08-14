@@ -25,12 +25,14 @@ const contaSalario = new ContaSalario(clienteRicardo);
 const diretor = new Diretor("Ricardo", 10000, '016463334');
 diretor.cadastrarSenha('123456');
 
-const gerente = new Gerente('Ricardo', 5000, '016433363');
+const gerente = new Gerente('Roberto', 5000, '016433363');
 const cliente = new Cliente('Alice', 2500, '456');
 
 const clienteLogado = Autenticador.login(cliente, '456');
 
 const estaLogado = Autenticador.login(diretor, '123456');
 console.log(estaLogado);     
+console.log(clienteLogado); 
+
 
 
